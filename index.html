@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Green Gold Colombia | Exportación Premium de Aguacate Hass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="#" class="nav-brand" data-view="inicio">
+        <div class="nav-brand-icon">
+          <img src="img/image.png" alt="Green Gold Colombia" />
+        </div>
+        <div>
+          <div class="nav-brand-text">Green Gold Colombia</div>
+          <div class="nav-brand-sub">Exportación Premium</div>
+        </div>
+      </a>
+      <nav class="menu">
+        <a href="#" data-view="inicio" data-translate="menu1" class="active"
+          >Inicio</a
+        >
+        <a href="#" data-view="quienes" data-translate="menu2">Nosotros</a>
+        <a href="#" data-view="producto" data-translate="menu3">Producto</a>
+        <a href="#" data-view="proceso" data-translate="menu4">Exportación</a>
+        <a href="#" data-view="mercado" data-translate="menu5">Mercado</a>
+        <a href="#" data-view="comprar" data-translate="menu_comprar"
+          >Comprar</a
+        >
+        <a href="#" data-view="contacto" data-translate="menu6">Contacto</a>
+        <a href="#" data-view="tracking" data-translate="menu7">Rastreo</a>
+      </nav>
+      <div class="nav-actions">
+        <select id="language" onchange="changeLang()">
+          <option value="es">🇨🇴 ES</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="zh">🇨🇳 中文</option>
+          <option value="ja">🇯🇵 日本語</option>
+        </select>
+        <a href="#" class="cart-icon" id="cart-icon"
+          >🛒 <span id="cart-count">0</span></a
+        >
+        <a
+          href="#"
+          class="cta-btn"
+          data-view="contacto"
+          data-translate="cotizar"
+          >Cotizar</a
+        >
+      </div>
+    </header>
+
+    <main id="app">
+      <!-- ═══════════════ INICIO ═══════════════ -->
+      <div id="view-inicio" class="view active">
+        <section class="hero">
+          <div class="hero-bg-pattern"></div>
+          <div class="hero-text">
+            <div class="hero-flag">
+              <div class="hero-flag-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <span
+                style="
+                  color: rgba(255, 255, 255, 0.6);
+                  font-size: 12px;
+                  font-weight: 500;
+                "
+                >Colombia · Hass Premium</span
+              >
+            </div>
+            <h1 data-translate="titulo">
+              Aguacate <em>Hass</em><br />de Colombia<br />al mundo
+            </h1>
+            <p class="hero-sub" data-translate="descripcion">
+              Producción sostenible, certificación internacional y logística
+              directa a Europa y Asia. Del campo colombiano a tu mesa.
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="#"
+                class="btn-hero-primary"
+                data-view="comprar"
+                data-translate="btn_comprar"
+                >Comprar ahora</a
+              >
+              <a
+                href="#"
+                class="btn-hero-outline"
+                data-view="producto"
+                data-translate="btn2"
+                >Ver producto</a
+              >
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-card-num">200+</div>
+              <div class="stat-card-label" data-translate="stat1_label">
+                Familias campesinas
+              </div>
+              <div class="stat-card-sub">beneficiadas directamente</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-num">4</div>
+              <div class="stat-card-label" data-translate="stat2_label">
+                Continentes
+              </div>
+              <div class="stat-card-sub">Europa, Asia y más</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card-num">100%</div>
+              <div class="stat-card-label" data-translate="stat3_label">
+                Hass Premium
+              </div>
+              <div class="stat-card-sub">certificación internacional</div>
+            </div>
+          </div>
+          <div class="hero-scroll">
+            <span
+              style="
+                font-size: 11px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+              "
+              >Descubrir</span
+            >
+            <div class="hero-scroll-line"></div>
+          </div>
+        </section>
+
+        <!-- HOW IT WORKS inline en inicio -->
+        <section class="how-section">
+          <div class="section-header">
+            <div class="section-tag">🌿 Proceso</div>
+            <h2 data-translate="how_title">¿Cómo funciona?</h2>
+          </div>
+          <div class="steps">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3 data-translate="step1_title">Elige tu paquete</h3>
+              <p data-translate="step1_desc">
+                Selecciona el volumen de aguacate que necesitas para tu negocio.
+              </p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3 data-translate="step2_title">Confirmamos tu pedido</h3>
+              <p data-translate="step2_desc">
+                Validamos disponibilidad y te enviamos factura electrónica.
+              </p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3 data-translate="step3_title">Recibe actualizaciones</h3>
+              <p data-translate="step3_desc">
+                Sigue tu pedido en tiempo real con nuestro sistema de rastreo.
+              </p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">4</div>
+              <h3 data-translate="step4_title">Disfruta tu producto</h3>
+              <p data-translate="step4_desc">
+                Aguacates frescos y certificados llegan directamente a tu país.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- APOYO CAMPESINOS inline en inicio -->
+        <section class="apoyo-section">
+          <div class="apoyo-img">
+            <img
+              src="https://www.finagro.com.co/sites/default/files/2017-09/10salmon_alejandraph01_1504931742_0.jpg"
+              alt="Campesinos colombianos"
+            />
+            <div class="apoyo-img-overlay"></div>
+          </div>
+          <div class="apoyo-content">
+            <div class="section-tag">💛 Impacto social</div>
+            <h2 data-translate="support_title">
+              Apoyamos a los <em>campesinos colombianos</em>
+            </h2>
+            <p data-translate="support_desc">
+              Trabajamos directamente con familias agricultoras del Eje Cafetero
+              y Antioquia, garantizando precios justos, condiciones dignas y
+              prácticas sostenibles que cuidan la tierra y sus comunidades.
+            </p>
+            <div class="apoyo-nums">
+              <div class="apoyo-num">
+                <div class="apoyo-num-val">200+</div>
+                <div class="apoyo-num-label">Familias beneficiadas</div>
+              </div>
+              <div class="apoyo-num">
+                <div class="apoyo-num-val">100%</div>
+                <div class="apoyo-num-label">Precio justo garantizado</div>
+              </div>
+              <div class="apoyo-num">
+                <div class="apoyo-num-val">12</div>
+                <div class="apoyo-num-label">Municipios en Colombia</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ QUIÉNES SOMOS ═══════════════ -->
+      <div id="view-quienes" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">🇨🇴 Nosotros</div>
+          <h1 data-translate="q1">Quiénes somos</h1>
+          <p data-translate="qdesc">
+            Somos una empresa colombiana dedicada a la producción y exportación
+            de aguacate Hass premium, con compromiso social y ambiental.
+          </p>
+          <a
+            href="#"
+            class="btn-hero-primary"
+            data-view="comprar"
+            data-translate="btn_comprar"
+            style="margin-top: 8px"
+            >Comprar ahora</a
+          >
+        </section>
+
+        <!-- PARALLAX SECTION -->
+        <div class="quienes-parallax" id="parallax-wrap">
+          <div
+            class="parallax-bg"
+            id="parallax-bg"
+            style="
+              background-image: url(&quot;https://www.lavozdelsur.es/uploads/s1/15/24/17/7/dji-0171-copia.jpeg&quot;);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="parallax-overlay"></div>
+          <div class="parallax-content">
+            <div class="parallax-text">
+              <div class="colombia-badge">🇨🇴 Hecho en Colombia</div>
+              <h2 data-translate="parallax_title">
+                Del corazón de Tolima<br />al mundo entero
+              </h2>
+              <p data-translate="parallax_desc">
+                Nuestras fincas están ubicadas entre 1,500 y 2,200 metros sobre
+                el nivel del mar, donde el clima perfecto crea el aguacate Hass
+                más aromático y cremoso del planeta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <section class="quienes-cards-section">
+          <div class="cards">
+            <div class="card">
+              <div class="card-icon">🌱</div>
+              <h3 data-translate="q2">Misión</h3>
+              <p data-translate="q2d">
+                Brindar aguacate de la más alta calidad internacional, con
+                procesos sostenibles que benefician a las familias campesinas
+                colombianas.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🚀</div>
+              <h3 data-translate="q3">Visión</h3>
+              <p data-translate="q3d">
+                Ser el principal proveedor colombiano de aguacate Hass para los
+                mercados de Europa y Asia para 2030.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">💚</div>
+              <h3 data-translate="q4">Valores</h3>
+              <p data-translate="q4d">
+                Compromiso, calidad, sostenibilidad, comercio justo y profundo
+                respeto por el campo colombiano y sus gentes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CAMPESINOS SECTION en quienes -->
+        <section class="campesinos-section">
+          <div class="campesinos-grid">
+            <div class="campesinos-img">
+              <img
+                src="https://www.yara.es/link/a2dcf8717c6f4feaaa2fd913d81c0620.aspx"
+                alt="Campesinos colombianos cosechando"
+              />
+              <div class="campesinos-img-overlay"></div>
+            </div>
+            <div class="campesinos-content">
+              <div class="section-tag">💛 Campo colombiano</div>
+              <h2 data-translate="camp_title">El corazón de nuestro negocio</h2>
+              <p data-translate="camp_desc1">
+                Detrás de cada aguacate hay una familia campesina colombiana que
+                madruga cada día para cosechar el mejor fruto. Nosotros somos el
+                puente entre su trabajo y el mundo.
+              </p>
+              <p data-translate="camp_desc2">
+                Pagamos precios justos, garantizamos compra toda la temporada y
+                apoyamos la educación de sus hijos a través de nuestro programa
+                de responsabilidad social.
+              </p>
+              <div class="campesinos-nums">
+                <div class="camp-num">
+                  <div class="camp-num-val">200+</div>
+                  <div class="camp-num-label">Familias aliadas</div>
+                </div>
+                <div class="camp-num">
+                  <div class="camp-num-val">12</div>
+                  <div class="camp-num-label">Municipios</div>
+                </div>
+                <div class="camp-num">
+                  <div class="camp-num-val">8 años</div>
+                  <div class="camp-num-label">De trayectoria</div>
+                </div>
+                <div class="camp-num">
+                  <div class="camp-num-val">∞</div>
+                  <div class="camp-num-label">Compromiso</div>
+                </div>
+              </div>
+              <a href="#" class="btn-primary" data-view="contacto"
+                >Contáctanos</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ PRODUCTO ═══════════════ -->
+      <div id="view-producto" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">🥑 Producto</div>
+          <h1 data-translate="p1">Aguacate Hass Premium</h1>
+          <p data-translate="pdesc">
+            Cultivado con estándares internacionales de calidad en las tierras
+            altas de Colombia. Sabor, textura y frescura incomparables.
+          </p>
+          <a
+            href="#"
+            class="btn-hero-primary"
+            data-view="comprar"
+            data-translate="btn_comprar"
+            style="margin-top: 8px"
+            >Comprar ahora</a
+          >
+        </section>
+        <section class="producto-section">
+          <div class="section-header">
+            <div class="section-tag">⭐ Características</div>
+            <h2>Por qué elegir nuestro Hass</h2>
+          </div>
+          <div class="cards" style="gap: 24px">
+            <div class="product-card-premium">
+              <div class="product-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80"
+                  alt="Calidad Premium Aguacate"
+                />
+                <span class="product-badge badge-popular">Premium</span>
+              </div>
+              <div class="product-body">
+                <h3 data-translate="p2">Calidad Premium</h3>
+                <p class="product-desc" data-translate="p2d">
+                  Seleccionado manualmente bajo estrictos estándares de
+                  exportación. Cada aguacate pasa por control de calidad antes
+                  de empacar.
+                </p>
+              </div>
+            </div>
+            <div class="product-card-premium featured">
+              <div class="product-img-wrap">
+                <img
+                  src="https://images.pexels.com/photos/4451866/pexels-photo-4451866.jpeg"
+                  alt="Producción sostenible"
+                />
+                <span class="product-badge badge-bulk">Sostenible</span>
+              </div>
+              <div class="product-body">
+                <h3 data-translate="p4">Producción Sostenible</h3>
+                <p class="product-desc" data-translate="p4d">
+                  Cultivo sin pesticidas dañinos. Procesos que respetan el medio
+                  ambiente y las comunidades locales de Colombia.
+                </p>
+              </div>
+            </div>
+            <div class="product-card-premium">
+              <div class="product-img-wrap">
+                <img
+                  src="https://st4.depositphotos.com/4590583/27993/i/450/depositphotos_279939476-stock-photo-avocado-leaves-box-rustic-style.jpg"
+                  alt="Exportación Global"
+                />
+                <span class="product-badge badge-discount">Global</span>
+              </div>
+              <div class="product-body">
+                <h3 data-translate="p3">Exportación Global</h3>
+                <p class="product-desc" data-translate="p3d">
+                  Envíos constantes a Alemania, China, Japón, Francia y más.
+                  Cadena de frío garantizada durante todo el trayecto.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ EXPORTACIÓN ═══════════════ -->
+      <div id="view-proceso" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">🚢 Exportación</div>
+          <h1 data-translate="proceso_title">Proceso de Exportación</h1>
+          <p>
+            Desde la cosecha hasta tu destino, con trazabilidad completa y
+            cadena de frío garantizada.
+          </p>
+          <a
+            href="#"
+            class="btn-hero-primary"
+            data-view="comprar"
+            data-translate="btn_comprar"
+            style="margin-top: 8px"
+            >Comprar ahora</a
+          >
+        </section>
+        <section class="proceso-section">
+          <div class="section-header">
+            <div class="section-tag">📋 Paso a paso</div>
+            <h2 data-translate="proceso_title">Del campo a tu país</h2>
+          </div>
+          <div class="proceso-timeline">
+            <div class="proceso-step">
+              <div class="proceso-step-icon">
+                🌿<span class="proceso-step-num">01</span>
+              </div>
+              <h3 data-translate="step_proc1">Cosecha</h3>
+              <p data-translate="step_proc1d">
+                Selección manual en finca con control estricto de madurez. Solo
+                los mejores frutos avanzan.
+              </p>
+            </div>
+            <div class="proceso-step">
+              <div class="proceso-step-icon">
+                📦<span class="proceso-step-num">02</span>
+              </div>
+              <h3 data-translate="step_proc2">Empaque</h3>
+              <p data-translate="step_proc2d">
+                Empaque certificado para exportación internacional con
+                identificación de trazabilidad.
+              </p>
+            </div>
+            <div class="proceso-step">
+              <div class="proceso-step-icon">
+                ✈️<span class="proceso-step-num">03</span>
+              </div>
+              <h3 data-translate="step_proc3">Transporte</h3>
+              <p data-translate="step_proc3d">
+                Logística internacional refrigerada, rastreable en tiempo real
+                por GPS.
+              </p>
+            </div>
+            <div class="proceso-step">
+              <div class="proceso-step-icon">
+                🎯<span class="proceso-step-num">04</span>
+              </div>
+              <h3 data-translate="step_proc4">Entrega</h3>
+              <p data-translate="step_proc4d">
+                Llegada a puerto y distribución local eficiente con confirmación
+                por email.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- CARRUSEL en exportación -->
+        <section class="carousel-section">
+          <div
+            class="section-tag"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+              color: var(--verde);
+              background: var(--verde-suave);
+              padding: 5px 14px;
+              border-radius: 50px;
+              margin-bottom: 12px;
+            "
+          >
+            📸 Galería
+          </div>
+          <h2 data-translate="carousel_title">Nuestra finca y proceso</h2>
+          <p>
+            Mira de cerca cómo cuidamos cada aguacate desde la semilla hasta tu
+            destino
+          </p>
+          <div class="carousel-container" id="carousel">
+            <div class="carousel-slide" id="carousel-slide">
+              <figure>
+                <img
+                  src="https://cdn.biodiversidadla.org/var/biodiversidadla_org/storage/images/documentos/los-aguacates-de-anglogold-dividen-a-cajamarca/1249542-1-esl-ES/Los-aguacates-de-AngloGold-dividen-a-Cajamarca_full.jpg"
+                  alt="Finca colombiana"
+                />
+                <figcaption class="carousel-caption">
+                  <h4>Finca en los Andes colombianos</h4>
+                  <p>Altitud perfecta para el aguacate Hass</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://static.plataformatierra.es/strapi-uploads/assets/web_cosecha_aguacate_velez_malaga_70d13e9bc4.png"
+                  alt="Cosecha de aguacate"
+                />
+                <figcaption class="carousel-caption">
+                  <h4>Cosecha manual selectiva</h4>
+                  <p>Solo los frutos en su punto óptimo de madurez</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://www.unisorting.com/images/impianto-selezione-avocado.jpg"
+                  alt="Selección de aguacate"
+                />
+                <figcaption class="carousel-caption">
+                  <h4>Control de calidad riguroso</h4>
+                  <p>Cada aguacate es inspeccionado individualmente</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://usil-blog.s3.amazonaws.com/PROD/blog/image/iStock-990488122.jpghttps://usil-blog.s3.amazonaws.com/PROD/blog/image/iStock-990488122.jpg"
+                  alt="Familias campesinas"
+                />
+                <figcaption class="carousel-caption">
+                  <h4>Nuestras familias campesinas</h4>
+                  <p>200+ familias que hacen posible Green Gold Colombia</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/node/article/field_image/Exportaciones%20de%20aguacate%20hass%202025.jpg"
+                  alt="Exportación global"
+                />
+                <figcaption class="carousel-caption">
+                  <h4>Exportación a Europa y Asia</h4>
+                  <p>Cadena de frío garantizada en todo el recorrido</p>
+                </figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn carousel-prev" onclick="prevSlide()">
+              ❮
+            </button>
+            <button class="carousel-btn carousel-next" onclick="nextSlide()">
+              ❯
+            </button>
+          </div>
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ MERCADOS ═══════════════ -->
+      <div id="view-mercado" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">🌍 Mercados</div>
+          <h1 data-translate="mercado_title">Mercados Internacionales</h1>
+          <p>
+            Presencia consolidada en los mercados más exigentes del mundo.
+            Cumplimos con las normativas de cada país.
+          </p>
+          <a
+            href="#"
+            class="btn-hero-primary"
+            data-view="comprar"
+            data-translate="btn_comprar"
+            style="margin-top: 8px"
+            >Comprar ahora</a
+          >
+        </section>
+        <section class="mercados-section">
+          <div class="section-header">
+            <div class="section-tag">🌐 Presencia global</div>
+            <h2>Destinos de exportación</h2>
+          </div>
+          <div class="cards">
+            <div class="mercado-card">
+              <div class="mercado-flag">🇩🇪</div>
+              <h3 data-translate="mercado_alemania">Alemania</h3>
+              <p data-translate="mercado_alemania_desc">
+                Principal destino europeo con demanda constante todo el año.
+              </p>
+              <span class="mercado-tag">Principal destino</span>
+            </div>
+            <div class="mercado-card">
+              <div class="mercado-flag">🇨🇳</div>
+              <h3 data-translate="mercado_china">China</h3>
+              <p data-translate="mercado_china_desc">
+                Mercado de 1.4B de personas con consumo creciente de aguacate.
+              </p>
+              <span class="mercado-tag">Alto crecimiento</span>
+            </div>
+            <div class="mercado-card">
+              <div class="mercado-flag">🇯🇵</div>
+              <h3 data-translate="mercado_japon">Japón</h3>
+              <p data-translate="mercado_japon_desc">
+                Alta exigencia de calidad premium. Consumidores sofisticados.
+              </p>
+              <span class="mercado-tag">Premium market</span>
+            </div>
+            <div class="mercado-card">
+              <div class="mercado-flag">🇫🇷</div>
+              <h3 data-translate="mercado_francia">Francia</h3>
+              <p data-translate="mercado_francia_desc">
+                Gastronomía de alto nivel y alta rotación en supermercados.
+              </p>
+              <span class="mercado-tag">Gastronomía</span>
+            </div>
+            <div class="mercado-card">
+              <div class="mercado-flag">🇰🇷</div>
+              <h3>Corea del Sur</h3>
+              <p>Mercado K-food que adopta el aguacate como superalimento.</p>
+              <span class="mercado-tag">Emergente</span>
+            </div>
+            <div class="mercado-card">
+              <div class="mercado-flag">🇬🇧</div>
+              <h3>Reino Unido</h3>
+              <p>Gran consumo de aguacate en cultura brunch y restaurantes.</p>
+              <span class="mercado-tag">Creciente</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ COMPRAR ═══════════════ -->
+      <div id="view-comprar" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">🛒 Catálogo</div>
+          <h1 data-translate="catalogo">Catálogo de Exportación</h1>
+          <p>
+            Elige el volumen que necesitas. Precios competitivos con descuentos
+            por volumen. Factura electrónica incluida.
+          </p>
+        </section>
+        <section class="comprar-section">
+          <div class="section-header">
+            <div class="section-tag" id="discount-timer-label">
+              🔥 Oferta por tiempo limitado
+            </div>
+            <h2>Nuestros paquetes</h2>
+            <p style="color: var(--gris); margin-top: 8px; font-size: 15px">
+              La oferta termina en:
+              <strong
+                id="countdown"
+                style="color: var(--verde); font-family: var(--font-display)"
+                >--:--:--</strong
+              >
+            </p>
+          </div>
+          <div class="cards">
+            <div class="product-card-premium">
+              <div class="product-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80"
+                  alt="Caja 4kg"
+                />
+              </div>
+              <div class="product-body">
+                <h3 data-translate="prod1">1 Tonelada</h3>
+                <p class="product-desc" data-translate="prod1-desc">
+                  Ideal para importadores pequeños. 1000 kg de aguacate Hass
+                  premium.
+                </p>
+                <div class="product-price" data-price="3200">$3,200 USD</div>
+                <div class="product-price-note">+ flete según destino</div>
+                <button
+                  onclick="add('1 Tonelada', 3200, 1000)"
+                  class="btn-primary"
+                  style="width: 100%"
+                  data-translate="add"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="product-card-premium featured">
+              <div class="product-img-wrap">
+                <img
+                  src="https://www.cabilfrut.cl/wp-content/uploads/2022/08/NP-Palta-portada.jpg"
+                  alt="Media tonelada"
+                />
+                <span class="product-badge badge-popular">⭐ Más pedido</span>
+              </div>
+              <div class="product-body">
+                <h3 data-translate="prod2">5 Toneladas</h3>
+                <p class="product-desc" data-translate="prod2_desc">
+                  Para distribuidores medianos. 5000 kg con descuento especial.
+                </p>
+                <div class="product-price" data-price="16000">$16,000 USD</div>
+                <div class="product-price-note">
+                  🔥 Precio especial por volumen
+                </div>
+                <button
+                  onclick="add('5 Toneladas', 16000, 5000)"
+                  class="btn-primary"
+                  style="width: 100%"
+                  data-translate="add"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+            <div class="product-card-premium">
+              <div class="product-img-wrap">
+                <img
+                  src="https://www.ica.gov.co/CMSPages/GetFile.aspx?guid=df93fdc3-c1de-4287-a42a-45736c7ab93a"
+                  alt="Tonelada completa"
+                />
+                <span class="product-badge badge-discount"
+                  >🎉 Mejor precio</span
+                >
+              </div>
+              <div class="product-body">
+                <h3 data-translate="prod3">10 Tonelada</h3>
+                <p class="product-desc" data-translate="prod3_desc">
+                  Para grandes distribuidores y supermercados. 10,000 kg con
+                  máximo descuento.
+                </p>
+                <div class="product-price" data-price="5500">$32,000 USD</div>
+                <div class="product-price-note">🎉 10% descuento incluido</div>
+                <button
+                  onclick="add('10 Toneladas', 32000, 10000)"
+                  class="btn-primary"
+                  style="width: 100%"
+                  data-translate="add"
+                >
+                  Añadir al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PAGOS -->
+        <section class="pagos-section">
+          <h2 data-translate="payment_title">Métodos de pago</h2>
+          <div class="payment-methods">
+            <span class="payment-badge">💚 Nequi</span>
+            <span class="payment-badge">💜 Daviplata</span>
+            <span class="payment-badge">🏦 Bancolombia</span>
+            <span class="payment-badge">💳 Tarjetas crédito/débito</span>
+            <span class="payment-badge">🏛️ Transferencia bancaria</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- ═══════════════ CONTACTO ═══════════════ -->
+      <div id="view-contacto" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">✉️ Contacto</div>
+          <h1 data-translate="contact_title">Contáctanos</h1>
+          <p data-translate="contact_desc">
+            ¿Tienes preguntas sobre precios, volúmenes o logística? Escríbenos y
+            respondemos en menos de 24 horas.
+          </p>
+        </section>
+        <section class="contacto-section">
+          <form id="contact-form" onsubmit="submitContact(event)">
+            <input
+              type="text"
+              id="contact-name"
+              placeholder="Nombre completo"
+              required
+            />
+            <input
+              type="email"
+              id="contact-email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <input
+              type="text"
+              id="contact-company"
+              placeholder="Empresa / Organización"
+            />
+            <input
+              type="text"
+              id="contact-country"
+              placeholder="País de destino"
+            />
+            <textarea
+              id="contact-message"
+              rows="5"
+              placeholder="¿En qué podemos ayudarte? Describe tu necesidad..."
+            ></textarea>
+            <button
+              type="submit"
+              class="btn-primary"
+              data-translate="contact_send"
+            >
+              Enviar mensaje
+            </button>
+          </form>
+          <div class="contact-alternatives">
+            <a
+              href="https://wa.me/573123456789"
+              target="_blank"
+              class="btn-outline"
+              >💬 WhatsApp</a
+            >
+            <a href="mailto:info@greengoldcolombia.com" class="btn-outline"
+              >✉️ Email directo</a
+            >
+          </div>
+          <p
+            style="
+              color: var(--gris);
+              font-size: 13px;
+              margin-top: 20px;
+              text-align: center;
+            "
+          >
+            Al enviar este formulario aceptas nuestra
+            <a href="#" id="open-privacy-link" style="color: var(--verde)"
+              >política de privacidad</a
+            >
+          </p>
+        </section>
+      </div>
+
+      <!-- ═══════════════ RASTREO ═══════════════ -->
+      <div id="view-tracking" class="view">
+        <section class="page-hero">
+          <div class="hero-tag">📦 Rastreo</div>
+          <h1 data-translate="tracking_title">Rastreo de Pedido</h1>
+          <p data-translate="tracking_desc">
+            Ingresa tu número de pedido para ver el estado actual de tu envío en
+            tiempo real.
+          </p>
+        </section>
+        <section class="tracking-section">
+          <div class="tracking-form">
+            <input type="text" id="tracking-id" placeholder="Ej: GGC-123456" />
+            <button
+              id="tracking-btn"
+              class="btn-primary"
+              onclick="trackOrder()"
+            >
+              🔍 Rastrear
+            </button>
+          </div>
+          <div id="tracking-result" class="tracking-result"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- SECCIONES GLOBALES -->
+    <section class="ubicacion-section">
+      <div
+        class="section-tag"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: var(--verde);
+          background: var(--verde-suave);
+          padding: 5px 14px;
+          border-radius: 50px;
+          margin-bottom: 12px;
+        "
+      >
+        📍 Ubicación
+      </div>
+      <h2 data-translate="location_title">Nuestra ubicación</h2>
+      <p data-translate="location_desc">
+        Finca principal en Antioquia, Colombia · Exportamos desde el Puerto de
+        Cartagena
+      </p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260485874!2d-75.574278!3d6.244287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b83856!2sAntioquia%2C%20Colombia!5e0!3m2!1ses!2sco!4v1711234567890"
+          width="100%"
+          height="400"
+          style="border: 0; display: block"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- MODAL CARRITO -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <h3 data-translate="cart_title">🛒 Mi Carrito</h3>
+        <div id="cart-list">
+          <p style="color: var(--gris); text-align: center; padding: 20px">
+            Tu carrito está vacío
+          </p>
+        </div>
+        <div class="total-box">
+          <strong data-translate="cart_total">Total:</strong>
+          <span class="total-amount" id="cart-total">$0 USD</span>
+        </div>
+        <div class="shipping-info">
+          <label data-translate="country_selector">🌍 País de destino:</label>
+          <select id="destination-country" onchange="updateShipping()">
+            <option value="co">🇨🇴 Colombia</option>
+            <option value="de">🇩🇪 Alemania</option>
+            <option value="fr">🇫🇷 Francia</option>
+            <option value="zh">🇨🇳 China</option>
+            <option value="ja">🇯🇵 Japón</option>
+            <option value="kr">🇰🇷 Corea del Sur</option>
+            <option value="gb">🇬🇧 Reino Unido</option>
+          </select>
+          <div class="shipping-badge" id="shipping-estimate">
+            Selecciona un país para ver el tiempo de envío estimado
+          </div>
+        </div>
+        <div class="customer-info">
+          <label>Nombre completo:</label>
+          <input type="text" id="customer-name" placeholder="Ej: Juan Pérez" />
+          <label>Método de pago:</label>
+          <select id="payment-method">
+            <option value="nequi">💚 Nequi</option>
+            <option value="daviplata">💜 Daviplata</option>
+            <option value="bancolombia">🏦 Bancolombia</option>
+            <option value="card">💳 Tarjeta crédito/débito</option>
+            <option value="transfer">🏛️ Transferencia bancaria</option>
+          </select>
+          <label>Correo para factura electrónica:</label>
+          <input type="email" id="user-email" placeholder="tu@email.com" />
+          <label class="checkbox-label">
+            <input type="checkbox" id="terms-checkbox" />
+            <span data-translate="terms_accept"
+              >Acepto los
+              <a href="#" id="open-privacy-cart" style="color: var(--verde)"
+                >términos y condiciones</a
+              ></span
+            >
+          </label>
+        </div>
+        <button
+          id="checkout-btn"
+          class="btn-primary"
+          style="width: 100%; margin-top: 8px"
+          onclick="checkout()"
+          data-translate="checkout"
+        >
+          Finalizar compra
+        </button>
+        <button id="close-modal" class="cancel" data-translate="close">
+          Cerrar
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL PRIVACIDAD -->
+    <div id="privacy-modal" class="modal">
+      <div class="modal-content">
+        <h3 data-translate="privacy_title">🔒 Política de Privacidad</h3>
+        <div class="privacy-text">
+          <p>
+            <strong>Green Gold Colombia</strong> se compromete a proteger la
+            privacidad de sus usuarios y clientes conforme a la Ley 1581 de 2012
+            de Colombia (Protección de Datos Personales) y el Reglamento General
+            de Protección de Datos (GDPR) de la Unión Europea.
+          </p>
+          <br />
+          <p>
+            <strong>Datos que recopilamos:</strong> Nombre, correo electrónico,
+            país de destino, y datos de la transacción comercial.
+          </p>
+          <br />
+          <p>
+            <strong>Finalidad:</strong> Procesamiento de pedidos, emisión de
+            facturas electrónicas, comunicaciones comerciales y seguimiento de
+            envíos.
+          </p>
+          <br />
+          <p>
+            <strong>Compartición:</strong> No compartimos tus datos con terceros
+            sin tu consentimiento expreso, excepto con operadores logísticos
+            para la gestión de entregas.
+          </p>
+          <br />
+          <p>
+            <strong>Derechos:</strong> Tienes derecho a acceder, rectificar,
+            cancelar y oponerte al tratamiento de tus datos personales
+            escribiendo a: privacidad@greengoldcolombia.com
+          </p>
+          <br />
+          <p>
+            <strong>Cookies:</strong> Usamos cookies técnicas esenciales para el
+            funcionamiento de la página.
+          </p>
+          <br />
+          <p>Fecha de última actualización: Enero 2025.</p>
+        </div>
+        <button
+          id="close-privacy"
+          class="btn-primary"
+          style="width: 100%; margin-top: 16px"
+          data-translate="close"
+        >
+          Entendido
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL CONFIRMACIÓN PEDIDO -->
+    <div id="confirm-modal" class="modal">
+      <div class="modal-content" style="text-align: center">
+        <div style="font-size: 3rem; margin-bottom: 12px">✅</div>
+        <h3>¡Pedido confirmado!</h3>
+        <p style="color: var(--gris); margin: 12px 0 20px" id="confirm-text">
+          Tu pedido ha sido procesado. Recibirás tu factura electrónica en tu
+          correo en los próximos minutos.
+        </p>
+        <div
+          style="
+            background: var(--verde-suave);
+            border-radius: var(--r);
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid var(--verde-line);
+          "
+        >
+          <p style="font-size: 13px; color: var(--gris)">Número de pedido</p>
+          <p
+            style="
+              font-family: var(--font-display);
+              font-size: 1.5rem;
+              font-weight: 700;
+              color: var(--verde);
+            "
+            id="order-number"
+          >
+            GGC-000000
+          </p>
+        </div>
+        <p style="font-size: 13px; color: var(--gris)">
+          Guarda este número para hacer seguimiento de tu pedido en la sección
+          <strong>Rastreo</strong>.
+        </p>
+        <button
+          onclick="closeConfirm()"
+          class="btn-primary"
+          style="width: 100%; margin-top: 20px"
+        >
+          Perfecto, gracias
+        </button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-bottom: 12px;
+            "
+          >
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: var(--verde-vivo);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+              "
+            >
+              🥑
+            </div>
+            <h3 style="margin: 0" data-translate="Green_Gold_C">
+              Green Gold Colombia
+            </h3>
+          </div>
+          <p data-translate="texto_fotter">
+            Exportadores de aguacate Hass premium desde el corazón de Colombia
+            al mundo. Comprometidos con la calidad, la sostenibilidad y el
+            bienestar de nuestras familias campesinas.
+          </p>
+          <div style="display: flex; gap: 8px; margin-top: 16px">
+            <span
+              style="
+                width: 20px;
+                height: 4px;
+                background: #ffcd00;
+                border-radius: 2px;
+              "
+            ></span>
+            <span
+              style="
+                width: 20px;
+                height: 4px;
+                background: #003087;
+                border-radius: 2px;
+              "
+            ></span>
+            <span
+              style="
+                width: 20px;
+                height: 4px;
+                background: #ce1126;
+                border-radius: 2px;
+              "
+            ></span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate="Navegacion">Navegación</h4>
+          <a href="#" data-view="inicio">Inicio</a>
+          <a href="#" data-view="quienes">Nosotros</a>
+          <a href="#" data-view="producto">Producto</a>
+          <a href="#" data-view="proceso">Exportación</a>
+          <a href="#" data-view="mercado">Mercados</a>
+        </div>
+        <div class="footer-col">
+          <h4>Comprar</h4>
+          <a href="#" data-view="comprar">Catálogo</a>
+          <a href="#" data-view="tracking">Rastreo de pedido</a>
+          <a href="#" data-view="contacto">Cotización</a>
+          <a href="#" id="open-privacy-footer">Política de privacidad</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:info@greengoldcolombia.com"
+            >✉️ info@greengoldcolombia.com</a
+          >
+          <a href="https://wa.me/573123456789" target="_blank"
+            >💬 WhatsApp directo</a
+          >
+          <a href="#">📍 Antioquia, Colombia</a>
+          <a href="#">🚢 Puerto de Cartagena</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Green Gold Colombia. Todos los derechos reservados.</p>
+        <p>Hecho con 💚 en Colombia 🇨🇴 para el mundo 🌍</p>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a
+      href="https://wa.me/573123456789"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chatea con nosotros"
+      >💬</a
+    >
+    <button
+      id="back-to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      ↑
+    </button>
+    <script>
+      function changeLang() {
+        window.changeLangReal();
+      }
+      (function () {
+        emailjs.init("LQMvHwzl2rppTTt0D"); // Reemplazar con tu clave pública
+      })();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
